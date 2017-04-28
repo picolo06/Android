@@ -1,0 +1,7 @@
+#Fri Mar 17 11:37:02 GMT-05:00 2017
+base.0=C\:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_016dc5574ebe4004404ca2bed33b1c93fcea6445
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_4f5c90948a5447a6706c3e177c4c8b7cf2480cb6\\classes.dex
+base.1=C\:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_4f5c90948a5447a6706c3e177c4c8b7cf2480cb6
+file.0=C\:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_016dc5574ebe4004404ca2bed33b1c93fcea6445\\classes.dex

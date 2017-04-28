@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_1febfdae904024769364fdce797b19a9a5a74fb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_605398e3fd10fba725dd76b4ac6b8e76898c935a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_51dbb86b5eb77c4fb1b770061dc5f3695caa1393\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_f7ecb9e3522a706242b86e4a7c5ba7d7bbea4e15\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_33b025a292a9f00756e574700e0aef1c48d84337\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_8965bb436f52ec5f8969dde4a3e45441ae34c7e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_a1465c28026697bffc0ad1dac8c11d6ad2b60733\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5c67d25ea5846c9a279178884dab21c39f5984e5">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_016dc5574ebe4004404ca2bed33b1c93fcea6445\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_2e14155bc5c38660d220812716a55a61850a207b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3125ed69240b13a8981a9c689cdb1d03da70bb5">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4f5c90948a5447a6706c3e177c4c8b7cf2480cb6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_f09f8f5a6d871d5eb7b9713b4cf6ef0d6a20bb4a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_06405f0e1a3671386a64fd523694524c2eb0ad36\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_3ea347525ac99923822f47b38e0e0dd69dbfd149\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_d469cfbecb06405eabeea4ffe58a206079759f4f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_cac462eec0eb4b7b37c44a714216a8d1a3181fa5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_c0872aff1e27277f8a2d9a5a222784d741bb81da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_2cb4fc3dc326b85667c3499e126146aa7d01f691\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_c5567f9dc6dbcf980a406d04b08038a81d1c5ca9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_f66fc20a52b05fa11f1cc80e3ffc86c98ceb85da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_831459359696520166ea637a241c0c758e42cd19\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_23d2691ff4bece1b0470addd3235d90eff6f4e55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_cc140a6338ab6daea55ed66d333c61e31a9c2659\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce86fb5a244e3c468410b7b19b580b220184485c">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_171da416019d705b1cd2073950c8ae7bcc338c7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_f854f6e9ee3d1891793c7d7f33b41b51938aad10\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_debcd92ffd2b4d38fdf9675995e6534d2f008ee9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_1b5e57d8479b91ba4d997066efb09062c79aa631\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="04afc6894a492d99012119218f6a6af48024e2dc">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f251b00a8d970613a2b7e3aa84b2173c2bbac7cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_bc74d245d6b50af5a2b0398ff10decca2c623033\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_c8d556c49be21309ceea742adfcf07194c84a43a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_ce071f2bc1dadaf42bf070dc5580920f9e8e44c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_9954ad109573c7f4042be0065463d1a66c823556\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\CLAUDY\AndroidStudioProjects\AlarmeProjet2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_0a5b30c3c0fbd3cb5cd45055331d4c7681b488ef\classes.dex" />
+    </item>
+
+</items>

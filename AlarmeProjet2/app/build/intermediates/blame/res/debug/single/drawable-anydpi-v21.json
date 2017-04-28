@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_delete.xml",
+        "source": "C:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\CLAUDY\\AndroidStudioProjects\\AlarmeProjet2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
+    }
+]
