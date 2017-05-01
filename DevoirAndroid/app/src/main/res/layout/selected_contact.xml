@@ -4,41 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.claudy.devoirandroid.selected_contact"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.example.claudy.devoirandroid.selected_contact">
 
-    <TextView
-        android:id="@+id/textView2"
+    <ImageView
+        android:id="@+id/selpic"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Contact Selectionne"
-        android:textColor="@android:color/background_dark"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/nomsel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:text="Nom"
-        android:textSize="24sp" />
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/contact_19" />
 
     <TextView
         android:id="@+id/selnomtxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/prenomsel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:text="Prenom"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp" />
 
     <TextView
@@ -134,6 +115,18 @@
             app:backgroundTint="@android:color/darker_gray"
             app:fabSize="mini"
             app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="mainpage"
+            app:backgroundTint="@android:color/darker_gray"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_home_black_24dp" />
 
 
 

@@ -1,16 +1,26 @@
 package com.example.claudy.devoirandroid;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Environment;
 import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
 public class add_contact extends AppCompatActivity {
-   // SqqDev salli;
+    public static final int IMAGE_REQUEST = 20;
+    // SqqDev salli;
    DatabaseHelper mDatabaseHelper;
 
     private FloatingActionButton btnAddData;
@@ -20,6 +30,7 @@ public class add_contact extends AppCompatActivity {
     private EditText instel;
     private EditText insmail;
    private EditText insstatut;
+    ImageView pic;
 
 
 
@@ -37,6 +48,7 @@ public class add_contact extends AppCompatActivity {
        insmail = (EditText) findViewById(R.id.mail);
         insstatut = (EditText) findViewById(R.id.stat);
         btnAddData = (FloatingActionButton) findViewById(R.id.btnAddData);
+        pic = (ImageView) findViewById(R.id.pic);
 
 
      /*   btnAddData.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +64,32 @@ public class add_contact extends AppCompatActivity {
             }
         });
 
+
+
      */
+
+        pic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent picpick = new Intent(Intent.ACTION_PICK);
+
+                File pictureDirectory =  Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+
+                String pictureDirectoryPath= pictureDirectory.getPath();
+                Uri data = Uri.parse(pictureDirectoryPath);
+                picpick.setDataAndType(data,"image/*");
+
+
+                startActivityForResult(picpick,IMAGE_REQUEST);
+            }
+        });
+
+        //onActivityResult(IMAGE_REQUEST,RESULT_OK,);
+
+
+        
+
+
         btnAddData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,6 +117,7 @@ public class add_contact extends AppCompatActivity {
             }
         });
     }
+
 
 
 
@@ -123,4 +161,28 @@ public class add_contact extends AppCompatActivity {
         startActivity(intent);
     }
 
+/*    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+            if (resultCode == RESULT_OK){
+                if (requestCode == IMAGE_REQUEST){
+                   Uri imageuri = data.getData();
+
+                    InputStream inputStream;
+
+                    try {
+                        inputStream = getContentResolver().openInputStream(imageuri);
+
+                        Bitmap image = BitmapFactory.decodeStream(inputStream);
+
+                        pic.setImageBitmap(image);
+
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                        Toast.makeText(this, "Unable to open image", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+
+
+    } */
 }

@@ -7,12 +7,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.Html;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -23,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private ListView mListView;
     FloatingActionButton btninfo;
+    FloatingActionButton btnsearch;
     private EditText filter;
+
     //SqqDev salli;
     DatabaseHelper mDatabaseHelper;
    // ArrayAdapter adapterr;
@@ -37,15 +41,18 @@ public class MainActivity extends AppCompatActivity {
 
         mListView = (ListView) findViewById(R.id.lvdevsq);
         btninfo = (FloatingActionButton) findViewById(R.id.btninfo);
+        btnsearch = (FloatingActionButton) findViewById(R.id.btnsearch);
 
         // salli = new SqqDev(this);
         mDatabaseHelper = new DatabaseHelper(this);
+
+
 
         btninfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                  String count = String.valueOf(mListView.getCount());
-                toastMessage(count);
+                toastMessage("Il y a" +count+"contact(s) enregistres");
             }
         });
 

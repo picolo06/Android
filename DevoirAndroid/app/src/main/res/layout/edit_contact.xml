@@ -19,6 +19,12 @@
         android:textColor="@android:color/background_dark"
         android:textSize="24sp" />
 
+    <ImageView
+        android:id="@+id/epic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/contact_19" />
+
     <TextView
         android:id="@+id/ednomtxt"
         android:layout_width="match_parent"

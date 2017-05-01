@@ -23,6 +23,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COL5 = "telephone";
     private static final String COL6 = "adresse";
     private static final String COL7 = "statut";
+   // private static final String COL8 = "image";
 
 
     public DatabaseHelper(Context context) {
@@ -56,6 +57,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL5, item4);
         contentValues.put(COL6, item5);
         contentValues.put(COL7, item6);
+       // contentValues.put(COL8, item7);
 
         Log.d(TAG, "addData: Adding " + item + " to " + TABLE_NAME);
 
@@ -129,6 +131,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL5, telephone);
         contentValues.put(COL6, adresse);
         contentValues.put(COL7, statut);
+
         db.update(TABLE_NAME, contentValues, "id = ?", new String[] {id});
         return true;
     }

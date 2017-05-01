@@ -1,8 +1,10 @@
 package com.example.claudy.devoirandroid;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -74,17 +76,36 @@ public class selected_contact extends AppCompatActivity {
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mDatabaseHelper.deleteName(seleectedID);
+                AlertDialog.Builder myalert = new  AlertDialog.Builder(selected_contact.this);
+                myalert.setTitle("Alert!!!");
+                myalert.setIcon(R.drawable.ic_warning_black_24dp);
+                myalert.setMessage("Voulez-vous supprimer ce contact?");
+                myalert.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        mDatabaseHelper.deleteName(seleectedID);
                /* selnom.setText("");
                selprenom.setText("");
                 seladr.setText("");
                 seltel.setText("");
                 selmail.setText("");
                 selstatut.setText(""); */
-                toastMessage("removed from database");
+                        toastMessage("removed from database");
 
-                Intent intent = new Intent(selected_contact.this, MainActivity.class);
-                startActivity(intent);
+                        Intent intent = new Intent(selected_contact.this, MainActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+                myalert.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                    }
+                });
+                myalert.create();
+                myalert.show();
+
             }
         });
 
