@@ -1,6 +1,7 @@
 package com.example.claudy.devoirandroid;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ public class add_contact extends AppCompatActivity {
     private EditText instel;
     private EditText insmail;
    private EditText insstatut;
+
 
 
     @Override
@@ -63,12 +65,14 @@ public class add_contact extends AppCompatActivity {
 
                 if (insnom.length() != 0) {
                     AddData(newnom,newprenom,newmail,newtel,newadr,newstat);
-                    insnom.setText("");
+                   /* insnom.setText("");
                     insstatut.setText("");
                     insadr.setText("");
                     instel.setText("");
                     insmail.setText("");
-                    insprenom.setText("");
+                    insprenom.setText(""); */
+                    Intent intent = new Intent(add_contact.this, MainActivity.class);
+                    startActivity(intent);
                 } else {
                     toastMessage("You must put something in the text field!");
                 }
@@ -110,6 +114,13 @@ public class add_contact extends AppCompatActivity {
 
     private void toastMessage(String message){
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
+    }
+
+    public  void mainpage (View view)
+
+    {
+        Intent intent = new Intent(add_contact.this, MainActivity.class);
+        startActivity(intent);
     }
 
 }

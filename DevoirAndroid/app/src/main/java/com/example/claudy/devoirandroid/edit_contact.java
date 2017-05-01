@@ -56,9 +56,9 @@ public class edit_contact extends AppCompatActivity {
 
         upnom.setText(selectedName);
         upprenom.setText(selectedPrenom);
-        upadr.setText(selectedEmail);
+        upadr.setText(selectedAdresse);
         uptel.setText(selectedTelephone);
-        upmail.setText(selectedAdresse);
+        upmail.setText(selectedEmail);
         upstatut.setText(selectedStatut);
 
         btnViewUpdate.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +71,7 @@ public class edit_contact extends AppCompatActivity {
                 String upsmail = upmail.getText().toString();
                 String upsstatut = upstatut.getText().toString();
                 if(!upsnom.equals("")){
-                    mDatabaseHelper.updateName(seleectedID,upsnom,upsprenom,upsadr,upstel,upsmail,upsstatut);
+                    mDatabaseHelper.updateName(seleectedID,upsnom,upsprenom,upsmail,upstel,upsadr,upsstatut);
                     toastMessage("Dtata modified");
                 }else{
                     toastMessage("You must enter a name");
@@ -96,5 +96,12 @@ public class edit_contact extends AppCompatActivity {
 
     private void toastMessage(String message){
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
+    }
+
+    public  void mainpage (View view)
+
+    {
+        Intent intent = new Intent(edit_contact.this, MainActivity.class);
+        startActivity(intent);
     }
 }

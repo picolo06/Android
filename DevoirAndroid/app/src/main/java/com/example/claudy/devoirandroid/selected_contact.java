@@ -66,22 +66,25 @@ public class selected_contact extends AppCompatActivity {
 
         selnom.setText(selectedName);
         selprenom.setText(selectedPrenom);
-        seladr.setText(selectedEmail);
+        selmail.setText(selectedEmail);
         seltel.setText(selectedTelephone);
-        selmail.setText(selectedAdresse);
+        seladr.setText(selectedAdresse);
         selstatut.setText(selectedStatut);
 
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mDatabaseHelper.deleteName(seleectedID);
-                selnom.setText("");
+               /* selnom.setText("");
                selprenom.setText("");
                 seladr.setText("");
                 seltel.setText("");
                 selmail.setText("");
-                selstatut.setText("");
+                selstatut.setText(""); */
                 toastMessage("removed from database");
+
+                Intent intent = new Intent(selected_contact.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -133,5 +136,12 @@ public class selected_contact extends AppCompatActivity {
 
     private void toastMessage(String message){
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
+    }
+
+    public  void mainpage (View view)
+
+    {
+        Intent intent = new Intent(selected_contact.this, MainActivity.class);
+        startActivity(intent);
     }
 }

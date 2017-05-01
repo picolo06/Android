@@ -11,7 +11,13 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Modifier Contact" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:password="false"
+        android:text="Modifier Contact"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/ednomtxt"
@@ -45,12 +51,14 @@
         android:layout_height="wrap_content"
         android:text="Email" />
 
+
+
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/edteltxt"
@@ -58,12 +66,14 @@
         android:layout_height="wrap_content"
         android:text="Telephone" />
 
+
+
     <EditText
         android:id="@+id/etel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="phone" />
 
     <TextView
         android:id="@+id/edadrtxt"
@@ -71,12 +81,14 @@
         android:layout_height="wrap_content"
         android:text="Adresse" />
 
+
+
     <EditText
         android:id="@+id/eadr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPostalAddress" />
 
     <TextView
         android:id="@+id/edstattxt"
@@ -101,6 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|left"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:clickable="true"
             app:backgroundTint="@android:color/darker_gray"
@@ -112,6 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
+            android:layout_marginLeft="240dp"
             android:layout_weight="1"
             android:clickable="true"
             android:onClick="cancelsv"
@@ -126,10 +140,10 @@
             android:layout_gravity="bottom|right"
             android:layout_weight="1"
             android:clickable="true"
-            android:onClick="homesv"
+            android:onClick="mainpage"
             app:backgroundTint="@android:color/darker_gray"
             app:fabSize="mini"
-            app:srcCompat="?attr/actionModeCloseDrawable" />
+            app:srcCompat="@drawable/ic_home_black_24dp" />
     </LinearLayout>
 
 </LinearLayout>

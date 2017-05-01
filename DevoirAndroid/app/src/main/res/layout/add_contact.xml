@@ -8,6 +8,17 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Ajouter Contact"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <TextView
         android:id="@+id/adcnomtxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,12 +50,15 @@
         android:layout_height="wrap_content"
         android:text="Email" />
 
+
+
+
     <EditText
         android:id="@+id/mail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/adcteltxt"
@@ -52,12 +66,13 @@
         android:layout_height="wrap_content"
         android:text="Telephone" />
 
+
     <EditText
         android:id="@+id/tel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="phone" />
 
     <TextView
         android:id="@+id/adcadrtxt"
@@ -65,12 +80,13 @@
         android:layout_height="wrap_content"
         android:text="Adresse" />
 
+
     <EditText
         android:id="@+id/adr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPostalAddress" />
 
     <TextView
         android:id="@+id/adcstattxt"
@@ -95,24 +111,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|left"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:clickable="true"
             android:onClick="yep"
             app:backgroundTint="@android:color/darker_gray"
             app:fabSize="mini"
-            app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+            app:srcCompat="@drawable/ic_save_black_24dp" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/btncancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
+            android:layout_marginLeft="240dp"
             android:layout_weight="1"
             android:clickable="true"
             android:onClick="cancelmv"
             app:backgroundTint="@android:color/darker_gray"
             app:fabSize="mini"
             app:srcCompat="@drawable/ic_cancel_black_24dp" />
+
+
     </LinearLayout>
 
 </LinearLayout>
