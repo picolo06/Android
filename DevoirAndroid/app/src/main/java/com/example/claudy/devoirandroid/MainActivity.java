@@ -7,15 +7,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.Html;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -27,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton btninfo;
     FloatingActionButton btnsearch;
     private EditText filter;
+    //ArrayList<datamine> arraylist = new ArrayList<datamine>();
 
     //SqqDev salli;
     DatabaseHelper mDatabaseHelper;
@@ -52,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                  String count = String.valueOf(mListView.getCount());
-                toastMessage("Il y a" +count+"contact(s) enregistres");
+                toastMessage("Il y a " +count+" contact(s) enregistres");
             }
         });
 
@@ -90,10 +88,14 @@ public class MainActivity extends AppCompatActivity {
         //get the data and append to a list
         Cursor data = mDatabaseHelper.getData();
         ArrayList<String> listData = new ArrayList<>();
+
+
         while(data.moveToNext()){
             //get the value from the database in column 1
             //then add it to the ArrayList
             listData.add(data.getString(1));
+
+
         }
         //create the list adapter and set the adapter
 
@@ -123,25 +125,36 @@ public class MainActivity extends AppCompatActivity {
         //set an onItemClickListener to the ListView
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long id) {
                 String name = adapterView.getItemAtPosition(i).toString();
+                //String id1 = new String(String.valueOf(adapterView.getItemIdAtPosition(i)));
+                long id3 = id +1 ;
+                String id2 = new String(String.valueOf(id3));
                 Log.d(TAG, "onItemClick: You Clicked on " + name);
+                Log.d(TAG, "onItemClick: item ID is " + id3);
 
-                Cursor data = mDatabaseHelper.getItemID(name); //get the id associated with that name
-                int itemID = -1;
+                //toastMessage("Id is" +id3+" pff");
+                //toastMessage("Id2 is" +id2+" pff");
+
+                Cursor data = mDatabaseHelper.getItemID(id2); //get the id associated with that name
+                int itemID = 0;
                 String prenom = "";
                 String mail = "";
                 String telephone = "";
                 String adresse = "";
                 String statut = "";
+                String image = "";
+                //toastMessage("itemID is" +data.getInt(0)+" pff");
 
-                while(data.moveToNext()){;
+                while(data.moveToNext()){
                     itemID = data.getInt(0);
+                    name = data.getString(1);
                     prenom = data.getString(2);
                     mail = data.getString(3);
                     telephone = data.getString(4);
                     adresse = data.getString(5);
                     statut = data.getString(6);
+                    image = data.getString(7);
 
                 }
                 if(itemID > -1){
@@ -154,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
                     editScreenIntent.putExtra("telephone",telephone);
                     editScreenIntent.putExtra("adresse",adresse);
                     editScreenIntent.putExtra("statut",statut);
+                    editScreenIntent.putExtra("image",image);
 
                     startActivity(editScreenIntent);
                 }

@@ -5,7 +5,14 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.util.Log;
+import android.widget.ImageView;
+
+import java.io.ByteArrayOutputStream;
+import java.sql.Blob;
 
 /**
  * Created by User on 2/28/2017.
@@ -15,7 +22,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String TAG = "DatabaseHelper";
 
-    private static final String TABLE_NAME = "contac_tbl";
+    private static final String TABLE_NAME = "josehin_tbl";
     private static final String COL1 = "ID";
     private static final String COL2 = "name";
     private static final String COL3 = "prenom";
@@ -23,7 +30,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COL5 = "telephone";
     private static final String COL6 = "adresse";
     private static final String COL7 = "statut";
-   // private static final String COL8 = "image";
+   private static final String COL8 = "image";
 
 
     public DatabaseHelper(Context context) {
@@ -38,7 +45,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 COL4 +" TEXT, " +
                 COL5 +" TEXT, " +
                 COL6 +" TEXT, " +
-                COL7 +" TEXT)";
+                COL7 +" TEXT, " +
+                COL8 +" TEXT)";
         db.execSQL(createTable);
     }
 
@@ -48,7 +56,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean addData(String item, String item2,String item3,String item4,String item5,String item6) {
+    public boolean addData(String item, String item2, String item3, String item4, String item5, String item6, String item7) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL2, item);
@@ -57,7 +65,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL5, item4);
         contentValues.put(COL6, item5);
         contentValues.put(COL7, item6);
-       // contentValues.put(COL8, item7);
+
+        contentValues.put(COL8, item7);
 
         Log.d(TAG, "addData: Adding " + item + " to " + TABLE_NAME);
 
@@ -83,14 +92,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     /**
-     * Returns only the ID that matches the name passed in
-     * @param name
+     *
+     * @param ID
      * @return
      */
-    public Cursor getItemID(String name){
+    public Cursor getItemID(String ID){
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT * FROM " + TABLE_NAME +
-                " WHERE " + COL2 + " = '" + name + "'";
+                " WHERE " + COL1 + " = '" + ID + "'";
+
         Cursor data = db.rawQuery(query, null);
         return data;
     }
@@ -121,7 +131,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(query);
     } */
 
-    public boolean updateName(String id, String name, String prenom, String mail, String telephone, String adresse, String statut) {
+    public boolean updateName(String id, String name, String prenom, String mail, String telephone, String adresse, String statut, String image) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL1, id);
@@ -131,6 +141,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL5, telephone);
         contentValues.put(COL6, adresse);
         contentValues.put(COL7, statut);
+
+        contentValues.put(COL8, image);
 
         db.update(TABLE_NAME, contentValues, "id = ?", new String[] {id});
         return true;
@@ -155,6 +167,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(TABLE_NAME, "id = ?", new String[] {id});
 
+    }
+
+    private byte[] imageViewToByte(ImageView image) {
+        Bitmap bitmap = ((BitmapDrawable)image.getDrawable()).getBitmap();
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
+        return byteArray;
+    }
+    public  static byte[] getBytes(Bitmap bitmap) {
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 0, stream);
+        return stream.toByteArray();
+    }
+
+    // convert from byte array to bitmap
+    public static Bitmap getPhoto(byte[] image) {
+        return BitmapFactory.decodeByteArray(image, 0, image.length);
     }
 
 }
